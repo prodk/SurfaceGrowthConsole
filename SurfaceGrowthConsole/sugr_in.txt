@@ -1,0 +1,33 @@
+0           # regime, 0 - bulk, 1 - surface growth, 2 - shear	1
+1           # metal Cu(0), Ag(1), Au(2), Ni(3), Al(4), Pb(5)	2
+8           # unit cells in x					3
+8           # unit cells in y					4
+8           # unit cells in z					5
+330         # temperature					6
+25000         # number of metal atoms (if regime is not bulk)	7
+0.0087381   # epsilon for metal-carbon LJ interaction		8
+2.4945      # sigma for metal-carbon LJ interaction		9
+
+# time parameters
+
+100000       # step limit					10
+0.001       # time step						11
+250         # averaging						12
+30000       # equilibration					13
+
+# shear parameters
+
+0.0001      # increment of shear				14
+120000       # cool interval					15
+
+# surface growth parameters
+
+0.03        # energy of deposited atoms				16
+40          # deposit by groups, containing this number of atoms 17
+1100        # deposit after this number of time steps		18
+
+# data handling
+1000         # create pdb file after this number of steps	19
+50          # compute rdf after this number of steps		20
+0           # create backup, 0 - no, 1 - yes			21
+0           # start from backup					22
