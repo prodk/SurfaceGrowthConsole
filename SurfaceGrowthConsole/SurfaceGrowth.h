@@ -1,10 +1,9 @@
-//--------------------------------------------------------
-// SurfaceGrowth.h - contains necessary headers and
-// prototypes of wrappers from SurfaceGrowth.cu,
-// should be included into the main file SurfaceGrowth.cpp
-// Copyright (c) 2010 Mykola Prodanov
-// (this code has been written in Sumy, Ukraine)
-//--------------------------------------------------------
+//-------------------------------------------------------------------------------
+// SurfaceGrowth.h - contains necessary headers and prototypes of wrappers 
+// from SurfaceGrowth.cu, should be included into the main file SurfaceGrowth.cpp
+// (c) 2010 Mykola Prodanov
+// (this code was written in Sumy, Ukraine)
+//-------------------------------------------------------------------------------
 
 #ifndef __SURFACE_GROWTH__
 #define __SURFACE_GROWTH__

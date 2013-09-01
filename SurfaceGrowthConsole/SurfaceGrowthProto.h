@@ -1,8 +1,8 @@
 //----------------------------------------------------------------------------
 // SurfaceGrowthProto.h - contains definition of Material array of structures,
 // function prototypes used in SurfaceGrowth.cpp and other definitions.
-// Copyright (c) 2010 Mykola Prodanov
-// (this code has been written in Sumy, Ukraine)
+// (c) 2010 Mykola Prodanov
+// (this code was written in Sumy, Ukraine)
 //----------------------------------------------------------------------------
 
 #ifndef __SURFACE_GROWTH_PROTO__

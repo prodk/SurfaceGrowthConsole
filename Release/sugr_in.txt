@@ -3,7 +3,7 @@
 8           # unit cells in x					3
 8           # unit cells in y					4
 8           # unit cells in z					5
-330         # temperature	(K)				6
+330         # temperature					6
 25000         # number of metal atoms (if regime is not bulk)	7
 0.0087381   # epsilon for metal-carbon LJ interaction		8
 2.4945      # sigma for metal-carbon LJ interaction		9
@@ -12,8 +12,8 @@
 
 100000       # step limit					10
 0.001       # time step						11
-250         # averaging						12
-30000       # equilibration					13
+20         # averaging						12
+10       # equilibration					13
 
 # shear parameters
 

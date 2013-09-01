@@ -1,13 +1,13 @@
 //----------------------------------------------
 // ComputeDefs.h - definitions for computations
-// Copyright (c) 2010 Mykola Prodanov
-// (this code has been written in Sumy, Ukraine)
+// (c) 2010 Mykola Prodanov
+// (this code was written in Sumy, Ukraine)
 //----------------------------------------------
 //-------------------------------------------------------------------
 // Most of the macroses are from the code accompanying the book
 // "The Art of Molecular Dynamics Simulation", 2nd edition,
 // by D. C. Rapaport, published by Cambridge University Press (2004).
-//(C) 2004  D. C. Rapaport
+// (C) 2004  D. C. Rapaport
 //-------------------------------------------------------------------
 
 #ifndef __COMPUTE_DEFS__

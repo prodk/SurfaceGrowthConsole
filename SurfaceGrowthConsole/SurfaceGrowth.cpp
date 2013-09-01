@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------
 // SurfaceGrowth.cpp - contains program's entry point and UI management
-// Copyright (c) 2010 Mykola Prodanov
-// (this code has been written in Sumy, Ukraine)
+// (c) 2010 Mykola Prodanov
+// (this code was written in Sumy, Ukraine)
 //---------------------------------------------------------------------
 
 #include "SurfaceGrowthProto.h"	// Contains necessary definitions and function prototypes.
@@ -59,7 +59,7 @@ int		g_hstepEquil = 50000;		// Equilibration period.
 int		g_hstepCool = 5000;			// How long thermostat is applied after stepEquil.
 real	g_hdeltaF = 0.0001;			// Increment of shear force to each atom in pN.
 real	g_hdeltaT = 0.001;			// Time step.
-int		g_hstepThermostat = 25;		// Step for applying of Berendsen thermostat.
+int		g_hstepThermostat = 25;		// Step for applying Berendsen thermostat.
 real	g_hgammaBerendsen = 0.005;	// Friction coefficient in Berendsen thermostat.
 int		g_hcellShiftZ = 4;			// Number of cells under the graphene layer.
 VecR	g_hregion;					// Dimension of the simulation cell.
@@ -113,7 +113,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	}		
 	// Get cuda device properties.
 	cudaGetDeviceProperties(&g_hDeviceProp, 0);
-	// Check compute capability, if less then 1.2 then exit.
+	// Check compute capability, if less than 1.2 then exit.
 	if( (g_hDeviceProp.major < 1) || 
 		( (g_hDeviceProp.major == 1) && (g_hDeviceProp.minor < 2) ) )
 	{
@@ -249,7 +249,7 @@ int SetParams()
 			if(g_hSimParams.nMolMe != 0)
 				g_hregion.z = 1.8*g_hSimParams.a*pow((0.25*g_hSimParams.nMolMe),0.33333333333) + 
 				g_hSimParams.a + g_hcellShiftZ*(g_hSimParams.rCutEam + g_hrNebrShell);
-			else	// If no metal atoms, than simply several cells.
+			else	// If no metal atoms, then simply several cells.
 				g_hregion.z = 3*(g_hSimParams.rCutEam + g_hrNebrShell);
 		}
 
@@ -421,7 +421,7 @@ int SetupJob()
 	if(g_bResult) {
 		TCHAR szBuf[MAX_PATH];
 		// Define file name depending on the regime.
-		if(g_hSimParams.iRegime == 0)	// if bulk
+		if(g_hSimParams.iRegime == 0)	// If bulk.
 		sprintf(szBuf, TEXT("_blk_x%i_y%i_z%i_Me%i_Av%i_Pdb%i_T%3.0f"),
 			g_hSimParams.initUcell.x, g_hSimParams.initUcell.y,
 			g_hSimParams.initUcell.z,
@@ -599,7 +599,7 @@ void InitVels ()
 
   VZero (g_hvSum); 
   for(n = 0; n < g_hSimParams.nMol; n++) {
-	  // For surface growth and shear metal atoms have zero initial velocity.
+	  // For surface growth and shear, metal atoms have zero initial velocity.
 	  if( (g_hSimParams.iRegime != 0) && (n < g_hSimParams.nMolMe) ) {// For metal.
 		  g_hv[n].x = 0.;
 		  g_hv[n].y = 0.;

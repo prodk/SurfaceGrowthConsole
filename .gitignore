@@ -9,13 +9,13 @@ ipch
 *.o
 
 # ignore in the intermediate commits
-*.md
-Release
-*.dll
+#*.md
+#Release
+#*.dll
 
 # ignore in the final commit
-#SurfaceGrowthConsole/*.dll
-#SurfaceGrowthConsole/Release
+SurfaceGrowthConsole/*.dll
+SurfaceGrowthConsole/Release
 
 # allow in the final commit:
 #Release
